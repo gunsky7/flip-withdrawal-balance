@@ -29,7 +29,7 @@ if ($conn->connect_error) {
 // sql to create table
 $sql = "CREATE TABLE " . DB_TABLE_NAME . " (
     `id` int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    `transaction_id` int(11) NOT NULL,
+    `transaction_id` bigint(15) UNSIGNED NOT NULL,
     `amount` int(11) NOT NULL,
     `status` varchar(20) NOT NULL,
     `timestamp` varchar(20) NOT NULL,
